@@ -38,7 +38,7 @@
             // lbluser
             // 
             this.lbluser.AutoSize = true;
-            this.lbluser.Location = new System.Drawing.Point(20, 10);
+            this.lbluser.Location = new System.Drawing.Point(12, 15);
             this.lbluser.Name = "lbluser";
             this.lbluser.Size = new System.Drawing.Size(29, 13);
             this.lbluser.TabIndex = 0;
@@ -46,14 +46,14 @@
             // 
             // txtuser
             // 
-            this.txtuser.Location = new System.Drawing.Point(79, 3);
+            this.txtuser.Location = new System.Drawing.Point(67, 8);
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(214, 20);
             this.txtuser.TabIndex = 1;
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(79, 29);
+            this.txtpassword.Location = new System.Drawing.Point(67, 34);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(214, 20);
@@ -62,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 36);
+            this.label2.Location = new System.Drawing.Point(12, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(218, 59);
+            this.btnlogin.Location = new System.Drawing.Point(206, 60);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 4;
@@ -82,13 +82,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 86);
+            this.ClientSize = new System.Drawing.Size(310, 89);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.lbluser);
             this.Name = "FrmLogIN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 
