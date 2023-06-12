@@ -44,12 +44,14 @@ namespace Practica
         }
         private void GrillaEstudiantes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Estudiante est;
-            est = (Estudiante)GrillaEstudiantes.Rows[e.RowIndex].DataBoundItem;
-            txtnombre.Text = est.Nombre;
-            txtapellido.Text = est.Apellido;
-            txtdni.Text = est.DNI.ToString();
-
+            if (e.RowIndex >= 0 && e.RowIndex < GrillaEstudiantes.Rows.Count)
+            {
+                Estudiante est;
+                est = (Estudiante)GrillaEstudiantes.Rows[e.RowIndex].DataBoundItem;
+                txtnombre.Text = est.Nombre;
+                txtapellido.Text = est.Apellido;
+                txtdni.Text = est.DNI.ToString();
+            }            
         }
         private void btnborrar_Click(object sender, EventArgs e)
         {
@@ -66,6 +68,7 @@ namespace Practica
 
                 listaEstudiantes.RemoveAt(index);
                 Listar();
+                Limpiar();
             }
         }
 

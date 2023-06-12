@@ -49,6 +49,7 @@
             this.GrillaEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GrillaEstudiantes.Location = new System.Drawing.Point(6, 19);
             this.GrillaEstudiantes.Name = "GrillaEstudiantes";
+            this.GrillaEstudiantes.ReadOnly = true;
             this.GrillaEstudiantes.Size = new System.Drawing.Size(586, 238);
             this.GrillaEstudiantes.TabIndex = 0;
             this.GrillaEstudiantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrillaEstudiantes_CellClick);
@@ -158,6 +159,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmEstudiante";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.GrillaEstudiantes)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
