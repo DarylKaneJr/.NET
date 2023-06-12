@@ -21,7 +21,7 @@ namespace Practica
         {
             if(txtnombre.Text != "" && txtapellido.Text != "" && txtdni.Text != "")
             {
-                Estudiante est = new Estudiante(txtnombre.Text, txtapellido.Text, int.Parse(txtdni.Text));
+                Estudiante est = new Estudiante(txtnombre.Text, txtapellido.Text, int.Parse(txtdni.Text));              
                 listaEstudiantes.Add(est);
                 Listar();
                 Limpiar();

@@ -39,6 +39,12 @@
             this.btnborrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtcelular = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtedad = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaEstudiantes)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -106,7 +112,7 @@
             // 
             // btnguardar
             // 
-            this.btnguardar.Location = new System.Drawing.Point(56, 97);
+            this.btnguardar.Location = new System.Drawing.Point(56, 175);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(132, 23);
             this.btnguardar.TabIndex = 7;
@@ -116,7 +122,7 @@
             // 
             // btnborrar
             // 
-            this.btnborrar.Location = new System.Drawing.Point(56, 126);
+            this.btnborrar.Location = new System.Drawing.Point(56, 204);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(132, 23);
             this.btnborrar.TabIndex = 8;
@@ -126,6 +132,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtedad);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtemail);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtcelular);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.btnborrar);
             this.groupBox1.Controls.Add(this.lblnombre);
@@ -150,6 +162,54 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Grilla Estudiantes";
+            // 
+            // txtcelular
+            // 
+            this.txtcelular.Location = new System.Drawing.Point(56, 149);
+            this.txtcelular.Name = "txtcelular";
+            this.txtcelular.Size = new System.Drawing.Size(132, 20);
+            this.txtcelular.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Celular";
+            // 
+            // txtemail
+            // 
+            this.txtemail.Location = new System.Drawing.Point(56, 123);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(132, 20);
+            this.txtemail.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Email";
+            // 
+            // txtedad
+            // 
+            this.txtedad.Location = new System.Drawing.Point(56, 97);
+            this.txtedad.Name = "txtedad";
+            this.txtedad.Size = new System.Drawing.Size(132, 20);
+            this.txtedad.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Edad";
             // 
             // FrmEstudiante
             // 
@@ -181,6 +241,12 @@
         private System.Windows.Forms.Button btnborrar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtedad;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtcelular;
+        private System.Windows.Forms.Label label1;
     }
 }
 

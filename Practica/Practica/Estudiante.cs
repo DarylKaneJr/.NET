@@ -11,7 +11,9 @@ namespace Practica
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public int DNI { get; set; }
-
+        public int Edad { get; set; }
+        public string Email { get; set; }
+        public int Celular { get; set; }
         public Estudiante(string nombre, string apellido, int dNI)
         {
             Nombre = nombre;
