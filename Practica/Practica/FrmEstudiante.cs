@@ -21,8 +21,20 @@ namespace Practica
         {
             if(txtnombre.Text != "" && txtapellido.Text != "" && txtdni.Text != "")
             {
-                Estudiante est = new Estudiante(txtnombre.Text, txtapellido.Text, int.Parse(txtdni.Text));              
+                Estudiante est = new Estudiante();
+                est.Nombre = txtnombre.Text;
+                est.Apellido = txtapellido.Text;
+                est.DNI = int.Parse(txtdni.Text);
+                est.Email = txtemail.Text;
                 listaEstudiantes.Add(est);
+                if (txtedad.Text != "" ) 
+                    est.Edad = int.Parse(txtedad.Text);
+                else
+                    est.Edad = 0;
+                if (txtcelular.Text != "")
+                    est.Celular = int.Parse(txtcelular.Text);
+                else
+                    est.Edad = 0;
                 Listar();
                 Limpiar();
             }
